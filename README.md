@@ -1,7 +1,6 @@
 # CICD-Challenge
 ![alt text](image-1.png)
 
-
 ## Table of Contents
 
 - [CICD-Challenge](#cicd-challenge)
@@ -9,12 +8,9 @@
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [User Story](#user-story)
-  - [Acceptance Criteria](#acceptance-criteria)
-  - [Getting Started](#getting-started)
+  - [Steps I took to complete the challenge](#steps-i-took-to-complete-the-challenge)
   - [Configuration](#configuration)
     - [GitHub Actions Workflow](#github-actions-workflow)
-    - [Required Resources](#required-resources)
 
 ## Description
 
@@ -24,8 +20,7 @@ This project provides a hands-on challenge to implement a Continuous Integration
 
 1. **Clone the Repository**: Download and unzip the starter code, and upload the contents to a new GitHub repository.
    ```bash
-   git clone <your-repo-url>
-   cd <your-repo-name>
+   git clone https://github.com/Robo-Ryan/CICD-Challenge
    ```
 
 2.	Install Dependencies: Run the following command to install the necessary dependencies.
@@ -40,20 +35,9 @@ This project provides a hands-on challenge to implement a Continuous Integration
 2. Create Pull Requests to the `develop` branch to trigger Cypress tests via GitHub Actions.
 3. Once tests pass, merge `develop` into `main` to trigger the Render deployment.
 
-## User Story
-
-**As** a software engineer integrating CI/CD,  
-**I want** an application that runs tests on Pull Requests to `develop` and automatically deploys to Render upon merging to `main`,  
-**so that** I can ensure code quality and consistent deployment with every major release.
-
-## Acceptance Criteria
-
-- **Given** a full-stack application, **when** new features are added, **then** Pull Requests should be made to the `develop` branch.
-- **When** a Pull Request is made to `develop`, **then** GitHub Actions should execute Cypress tests.
-- **When** the tests pass, **then** the results should be visible in GitHub Actions, allowing code to be merged.
 - **When** code is merged from `develop` to `main`, **then** GitHub Actions should automatically deploy the application to Render.
 
-## Getting Started
+## Steps I took to complete the challenge
 
 1. **Set Up the GitHub Repository**:
    - Upload the contents of the starter code to a new GitHub repository.
@@ -78,9 +62,3 @@ This project provides a hands-on challenge to implement a Continuous Integration
 
 3. **Environment Variables**:
    - Use GitHub Secrets to securely store the Render API key and Deploy hook URL.
-
-### Required Resources
-
-- [Render Deploy Hooks](https://render.com/docs/deploy-hooks)
-- [Render API Key](https://render.com/docs/api-key)
-- [GitHub Repo Secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
