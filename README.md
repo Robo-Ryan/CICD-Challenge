@@ -11,6 +11,7 @@
   - [Steps I took to complete the challenge](#steps-i-took-to-complete-the-challenge)
   - [Configuration](#configuration)
     - [GitHub Actions Workflow](#github-actions-workflow)
+  - [Screenshot of GitHub Actions Workflow running](#screenshot-of-github-actions-workflow-running)
 
 ## Description
 
@@ -62,3 +63,6 @@ This project provides a hands-on challenge to implement a Continuous Integration
 
 3. **Environment Variables**:
    - Use GitHub Secrets to securely store the Render API key and Deploy hook URL.
+
+## Screenshot of GitHub Actions Workflow running
+![alt text](image-2.png)
